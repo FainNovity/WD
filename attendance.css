@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+:root {
+    --dom: linear-gradient(45deg,#480048,#c04848);
+    --font: #F4EAE6; 
+    --sec: linear-gradient(45deg,
+#283048,#859398);
+    --btn: #E57F84;
+}
+.wrapper {
+    position: absolute;
+    background: var(--dom);
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100vw;
+    color: var(--font);
+    font-family: 'Asap Condensed', sans-serif;
+font-family: 'Encode Sans Semi Expanded', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+    overflow: hidden;
+    overflow-y: auto;
+}
+#show {    
+    text-align: center;
+    margin: 5vh auto;
+    animation: eff 0.5s infinite ease-out;
+    animation-play-state: paused;
+}    
+.abs {
+    height: 55vh;
+    width: 80vmin;
+    margin: 5vh auto 0vh;
+    border-radius: 2vh;    
+    background: var(--sec);
+    display: grid;
+   align-content: space-around;
+   justify-content: space-around;
+    
+}
+
+textarea {    
+    width: 70%;
+    margin: 1vh auto;
+    height: 5vh;
+    color: var(--font);
+    background: #10101050;      
+    border: 0.1vh solid var(--font);
+    
+}
+.btns {
+    display: flex;
+    margin: 3vh auto;
+    justify-content: center;
+}
+.btns button {
+    margin: 2vw;
+    border: 0px;
+    background: var(--btn); 
+    font-size: 2vh;
+    font-weight: 400;
+    padding: 0.5vh 1vh;
+    border-radius: 1vh;
+    color: var(--font);
+    letter-spacing: 0.5vh;
+    font-weight: 500;
+}
+.classSelect {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 2%;
+}
+[type="radio"] {
+    filter: hue-rotate(110deg);
+    border: 0px;
+}
+[type="tel"]{
+    width: 70%;
+    border-radius: 2vh;
+    
+    margin: 2vh auto; 
+    height: 4vh; 
+    text-align: center;  
+    color: var(--font);
+    background: #10101050;      
+    border: 0.1vh solid var(--font);
+}
+.classSelect input {
+    margin: auto 2vh;
+    
+}
+@keyframes eff {
+    0%,100%{
+      transform: scale(1);  
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
