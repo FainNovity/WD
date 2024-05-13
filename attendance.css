@@ -59,9 +59,10 @@ textarea {
     display: flex;
     margin: 3vh auto;
     justify-content: center;
+    align-content: center;
 }
 .btns button {
-    margin: 2vw;
+    margin: auto 2vw;
     border: 0px;
     background: var(--btn); 
     font-size: 2vh;
