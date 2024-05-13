@@ -76,6 +76,27 @@ function absent(){
     update();
     playIt();
 }
+
+
+document.addEventListener('keydown',()=>{
+    
+    if(event.key=="ArrowRight"){
+        present();
+    }
+    else if(event.key=="ArrowLeft"){
+        absent();
+    }
+    else if(event.key=="ArrowDown"){
+        changeClass();
+    }
+    else if(event.key=="a" || event.key=="A"){
+   document.getElementById('a').checked=true;
+    }
+    else if(event.key=="b" || event.key=="B"){
+   document.getElementById('b').checked=true;
+    }
+});
+
     function start() {
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
