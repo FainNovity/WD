@@ -1,4 +1,4 @@
-var currentRoll=101;
+var currentRoll=1;
 var abs=0;
 var dt= new Date();
 var year= dt.getFullYear();
@@ -60,15 +60,15 @@ function present() {
 function absent(){    
     abs++;
     
-    if(parseInt(currentRoll/100)==1){
+    if(parseInt(currentRoll/100)==0){
     var val= A.value;
     A.value=val.concat(currentRoll+", ");            
     }
-    if(parseInt(currentRoll/100)==2){
+    if(parseInt(currentRoll/100)==1){
         var val= B.value;
     B.value=val.concat(currentRoll+", "); 
     }
-    if(parseInt(currentRoll/100)==3){
+    if(parseInt(currentRoll/100)==2){
         var val= C.value;
     C.value=val.concat(currentRoll+", "); 
     }
